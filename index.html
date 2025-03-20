@@ -17,16 +17,16 @@
             <img src="media/flash.jpg" style="width:40px;" class="rounded-pill"> 
           </a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#Inicio">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SVG</a>
+            <a class="nav-link" href="#Imagenes">SVG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MP3</a>
+            <a class="nav-link" href="#Audio">MP3</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MP4</a>
+            <a class="nav-link" href="#Video">MP4</a>
           </li>
         </ul>
         <form class="d-flex">
@@ -70,14 +70,14 @@
       </button>
     </div>
     <hr>
-    <div class="container_presentacion">
+    <div class="container_presentacion" id="Inicio">
       <h1>Lo aprendido en clase</h1>
       <p>En esta pagina web podras encontrar todo lo trabajado en la Unidad Formativa 2 del Modulo 09, en lo que incluye, fotografias svg, 
         uso del elemento de audio de HTML5 y edicion de video con Kdenlive con el tag de video de HTML5</p>
     </div>
     <hr>
 
-    <div class="audio-grid">
+    <div class="audio-grid" id="Audio">
       <div class="audio-item">
         <img src="media/tecno_portada.jpg" alt="Cover Image" class="audio-cover">
         <audio controls>
@@ -95,7 +95,7 @@
     </div>
 
     <hr>
-    <div class="container_cards">
+    <div class="container_cards" id="Imagenes">
         <!-- targeta numero 1  -->
       <div class="card" style="width:400px">
         <img class="card-img-top" src="media/casa.png" alt="Card image">
@@ -128,7 +128,7 @@
       </div>
     </div>
     <hr>
-    <div class="container_video">
+    <div class="container_video" id="Video">
       <video width="320" height="240" controls>
         <source src="media/Anderson Silva Top 5 Finishes.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -223,5 +223,10 @@
     </div> 
 
   </div>  
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sebastian. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>

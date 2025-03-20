@@ -112,8 +112,8 @@ hr{
 
 .audio-grid {
     display: flex;
-    gap: 40px; /* Aumentar el espaciado entre los elementos */
-    justify-content: center; /* Centrar horizontalmente */
+    gap: 40px; 
+    justify-content: center;
   }
   
   .audio-item {
@@ -123,13 +123,28 @@ hr{
   }
   
   .audio-cover {
-    width: 200px; /* Ajustar el tamaño de la imagen */
-    height: 200px; /* Ajustar el tamaño de la imagen */
-    margin-bottom: 20px; /* Aumentar el margen inferior */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 200px; 
+    height: 200px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   audio {
-    width: 250px; /* Ajustar el ancho del reproductor de audio */
+    width: 250px; 
+  }
+
+  .footer {
+    background-color: #a49329; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
