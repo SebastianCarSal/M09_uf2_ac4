@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <a class="navbar-brand" href="#">
+            <img src="media/flash.jpg" style="width:40px;" class="rounded-pill"> 
+          </a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SVG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MP3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MP4</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button type="button">Buscar</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="container_cuerpo">
+      <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/audio.jpg" alt="Los Angeles" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="media/imagen.jpg" alt="Chicago" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="media/video.jpg" alt="New York" class="d-block w-100">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <hr>
+    <div class="container_presentacion">
+      <h1>Lo aprendido en clase</h1>
+      <p>En esta pagina web podras encontrar todo lo trabajado en la Unidad Formativa 2 del Modulo 09, en lo que incluye, fotografias svg, 
+        uso del elemento de audio de HTML5 y edicion de video con Kdenlive con el tag de video de HTML5</p>
+    </div>
+    <hr>
+
+    <div class="audio-grid">
+      <div class="audio-item">
+        <img src="media/tecno_portada.jpg" alt="Cover Image" class="audio-cover">
+        <audio controls>
+          <source src="media/alan-amjad-tiktok-music-audio-167245.mp3" type="audio/mp3">
+          El teu navegador no suporta el tag audio
+        </audio>
+      </div>
+      <div class="audio-item">
+        <img src="media/town_portada.jpg" alt="Cover Image" class="audio-cover">
+        <audio controls>
+          <source src="media/town-10169.mp3" type="audio/mp3">
+          El teu navegador no suporta el tag audio
+        </audio>
+      </div>
+    </div>
+
+    <hr>
+    <div class="container_cards">
+        <!-- targeta numero 1  -->
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="media/casa.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Casa</h4>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Casa" >
+            Ver de cerca
+          </button>
+        </div>
+      </div>
+        <!-- targeta numero 2 -->
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="media/coche.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Coche</h4>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Coche" >
+            Ver de cerca
+          </button>
+        </div>
+      </div>
+        <!-- targeta numero 3 -->
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="media/robot.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Robot</h4>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Robot" >
+            Ver de cerca
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container_video">
+      <video width="320" height="240" controls>
+        <source src="media/Anderson Silva Top 5 Finishes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Modal 1 Casa -->
+    <div class="modal" id="Casa">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Casa</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <img class="card-img-top" src="media/casa.png" alt="Card image">
+          <!-- Modal body -->
+          <div class="modal-body">
+            Esta imagen es el resultado de una actividad diseñada para aprender a utilizar SVG (Scalable Vector Graphics) en la web. SVG es un formato basado en XML que permite crear gráficos vectoriales directamente en el código, sin necesidad de imágenes externas.
+            En este ejercicio, se programaron formas básicas para construir una casa:
+            <li>Rectángulos para fondo, las paredes, las ventanas y puerta.</li>
+            <li>Un triángulo para el techo.</li>
+            <li>Círculos para representar el sol y el pomo de la puerta.</li>
+            El objetivo de esta actividad es comprender cómo se pueden dibujar y manipular figuras con SVG usando código, permitiendo gráficos escalables y optimizados para la web.
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 coche -->
+    <div class="modal" id="Coche">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Coche</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <img class="card-img-top" src="media/coche.png" alt="Card image">
+          <!-- Modal body -->
+          <div class="modal-body">
+            Esta imagen es parte de una actividad diseñada para aprender a programar gráficos con SVG (Scalable Vector Graphics). SVG permite dibujar formas mediante código, sin necesidad de imágenes externas, lo que lo hace ideal para gráficos escalables y optimizados para la web.
+
+            En este ejercicio, se utilizaron diferentes elementos para construir un coche:
+
+              <li>Rectángulos rojos para la carrocería y la cabina.</li>
+              <li>Rectángulos azules para simular las ventanas.</li>
+              <li>Rectángulos amarillos como faros delanteros y traseros.</li>
+              <li>Círculos grises y negros para representar las ruedas con su centro.</li>
+              Con esta práctica, se explora cómo combinar formas geométricas simples para crear ilustraciones más complejas, desarrollando habilidades en el uso de SVG y programación gráfica. 🚀
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- Modal 3 Robot -->
+    <div class="modal" id="Robot">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Robot</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <img class="card-img-top" src="media/robot.png" alt="Card image">
+          <!-- Modal body -->
+          <div class="modal-body">
+            🚗 Creando un Coche con SVG<br>
+            Esta imagen fue creada como parte de una actividad para aprender a programar gráficos con SVG (Scalable Vector Graphics). SVG permite dibujar figuras utilizando código, lo que facilita la creación de gráficos escalables sin pérdida de calidad.
+            
+            En este ejercicio, se construyó un coche usando diferentes formas geométricas:
+            
+            <li>Rectángulos para el chasis, las ventanas y otras partes de la estructura.</li>
+            <li>Círculos para representar luces, botones e indicadores.</li>
+            Con esta actividad, se explora cómo combinar elementos básicos para diseñar objetos más complejos, fomentando el aprendizaje de gráficos vectoriales y programación visual. 🚀
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </div>  
+</body>
+</html>
